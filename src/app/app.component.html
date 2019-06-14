@@ -1,0 +1,25 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div id="content" style="text-align:center">
+  <h1>
+   My Library
+  </h1>
+<p>Title<input type="text" [(ngModel)]="Title">&nbsp;
+ Author <input type="text" [(ngModel)]="Author"> &nbsp; <button id="first"(click)="add()">Add</button></p>
+<table style="text-align:center">
+<tr>
+  <th>title</th>
+  <th>author</th>
+  <th>delete</th>
+</tr>
+<tr *ngFor="let item of array">
+  <td>{{item.title}}</td>
+  <td>{{item.author}}</td>
+  <td> <button class="buttonn" (click)="x(item.id)"><td>x</td></button>
+ </tr>
+
+</table>
+  </div>
+
+
+
+<router-outlet></router-outlet>
